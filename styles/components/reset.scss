@@ -1,0 +1,14 @@
+/* COMMON */
+body{
+  @include typography;
+  color: $font-color;
+}
+
+img{
+  display: block;
+}
+
+a{
+  text-decoration: none;
+  color: $font-color;
+}

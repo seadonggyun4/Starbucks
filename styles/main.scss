@@ -1,9 +1,11 @@
+@import './constants/color.scss';
 
-body{
-  $color: #333;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 1.4;
-  font-family: 'Nanum Gothic', sans-serif;
-}
+@import './mixin/typography.scss';
+
+@import './components/reset.scss';
+
+@import './components/sub-menu.scss';
+
+@import './layouts/header.scss';
+
 
