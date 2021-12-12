@@ -1,0 +1,47 @@
+/* GNB */
+
+  header .sub-menu{
+
+    ul.menu{
+      display: flex;
+      align-items: center;
+      font-family: Arial, sans-serif;
+
+      li{
+        position: relative;
+
+        &::before{
+          content: "";
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          margin: auto 0;
+          width: 1px;
+          height: 12px;
+          background-color:#e5e5e5;
+        }
+
+        &:first-child::before{
+          content: '';
+          display: none;
+        }
+      }
+
+
+      a{
+        display: block;
+        font-size: 12px;
+        padding: 11px 16px;
+        color: #656565;
+
+
+        &:hover{
+          color: #000;
+        }
+      }
+  
+      
+    }
+
+  }
+
