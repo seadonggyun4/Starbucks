@@ -1,24 +1,26 @@
 /* GNB */
 
 header{
-  background-color: royalblue;
+  border-bottom: 1px solid #c8c8c8;
+  background-color: #f6f5f0;
 
   .inner{
     position: relative;
     margin: 0 auto;
     width: 1100px;
     height: 120px;
-    background-color: orange;
+
+
+    .logo{
+      position: absolute;
+      // 기준을 top, bottom 으로 지정해 가운데 정렬한다.
+      top:0;
+      bottom: 0;
+      left: 0;
+      margin: auto;
+      height: 75px;
+    }
   }
 
-  .logo{
-    position: absolute;
-    // 기준을 top, bottom 으로 지정해 가운데 정렬한다.
-    top:0;
-    bottom: 0;
-    left: 0;
-    margin: auto;
-    height: 75px;
-    display: none;
-  }
+  
 }

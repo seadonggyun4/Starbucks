@@ -1,6 +1,10 @@
 /* GNB */
 
   header .sub-menu{
+    position: absolute;
+    display: flex;
+    top: 10px;
+    right: 0;
 
     ul.menu{
       display: flex;
@@ -16,7 +20,7 @@
           top: 0;
           bottom: 0;
           margin: auto 0;
-          width: 1px;
+          width: 2px;
           height: 12px;
           background-color:#e5e5e5;
         }
@@ -41,6 +45,45 @@
       }
   
       
+    }
+
+    .search{
+      position: relative;
+      height: 34px;
+      
+
+      input{
+        width: 36px;
+        height: 34px;
+        color: #777;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: #fff;
+        font-size: 12px;
+        transition: width .4s ease-in-out;
+
+        &:focus{
+          width: 190px;
+          border-color: #669900;
+        }
+      }
+
+      .material-icons{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 8px;
+        height: 24px;
+        margin: auto 0;
+        transition: .4s ease-in-out;
+      }
+
+      &.focused{
+
+        .material-icons{
+          opacity: 0;
+        }
+      }
     }
 
   }
