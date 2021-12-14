@@ -1,4 +1,4 @@
-/* GNB */
+/* HEADER */
 
   header .sub-menu{
     position: absolute;
@@ -15,11 +15,8 @@
         position: relative;
 
         &::before{
+          @include margin-center;
           content: "";
-          position: absolute;
-          top: 0;
-          bottom: 0;
-          margin: auto 0;
           width: 2px;
           height: 12px;
           background-color:#e5e5e5;
@@ -64,17 +61,14 @@
 
         &:focus{
           width: 190px;
-          border-color: #669900;
+          border-color: $starbucks;
         }
       }
 
       .material-icons{
-        position: absolute;
-        top: 0;
-        bottom: 0;
+        @include margin-center;
         right: 8px;
         height: 24px;
-        margin: auto 0;
         transition: .4s ease-in-out;
       }
 

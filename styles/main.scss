@@ -1,10 +1,13 @@
 @import './constants/color.scss';
+@import './constants/z-index.scss';
 
 @import './mixin/typography.scss';
+@import './mixin/margin-center.scss';
 
+@import './components/inner.scss';
 @import './components/reset.scss';
-
 @import './components/sub-menu.scss';
+@import './components/main-menu.scss';
 
 @import './layouts/header.scss';
 

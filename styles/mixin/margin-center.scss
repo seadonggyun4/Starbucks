@@ -1,0 +1,9 @@
+@mixin margin-center {
+  // 기준을 top, bottom 으로 지정해 가운데 정렬한다.
+  // 적용될 대상은 반드시 height 값이 정해져 있어야 브라우저가 가운데로 계산할수 있다.
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+}
+
