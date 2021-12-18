@@ -4,10 +4,12 @@
 @import './mixin/typography.scss';
 @import './mixin/margin-center.scss';
 
-@import './components/inner.scss';
-@import './components/reset.scss';
+@import './base/inner.scss';
+@import './base/reset.scss';
+
 @import './components/sub-menu.scss';
 @import './components/main-menu.scss';
+@import './components/badges.scss';
 
 @import './layouts/header.scss';
 
