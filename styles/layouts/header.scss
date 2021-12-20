@@ -1,8 +1,10 @@
 /* Header */
 
 header{
+  position: fixed;
   border-bottom: 1px solid #c8c8c8;
   background-color: #f6f5f0;
+  width: 100%;
 
   .logo{
     @include margin-center;
