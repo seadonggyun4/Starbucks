@@ -1,0 +1,61 @@
+/* btn modules*/
+
+.btn{
+  display: block;
+  padding: 10px;
+  width: 130px;
+  border: 2px solid $primary-color;
+  border-radius: 4px;
+  color: $primary-color;
+  font-size: 16px;
+  font-weight: 700px;
+  text-align: center;
+  cursor: pointer;
+  transition:  .4s ease-in-out;
+
+  &:hover{
+    color: $white;
+    background-color: $primary-color;
+  }
+}
+
+
+.btn.btn--reverse{
+  color: $white;
+  background-color: $primary-color;
+
+  &:hover{
+    color: $primary-color;
+    background-color: transparent;
+  }
+}
+
+.btn.btn--brown{
+  color: #592B18;
+  border-color: #592B18;
+
+  &:hover{
+    color: $white;
+    background-color: #592B18;
+  }
+}
+
+.btn.btn--gold{
+  color: #D9AA8A;
+  border-color: #D9AA8A;
+
+  &:hover{
+    color: $white;
+    background-color: #D9AA8A;
+  }
+}
+
+.btn.btn--white{
+  color: $white;
+  border-color: $white;
+
+  &:hover{
+    color: $primary-color;
+    background-color: $white;
+  }
+}
