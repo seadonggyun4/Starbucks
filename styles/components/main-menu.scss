@@ -5,7 +5,7 @@ header .main-menu{
   position: absolute;
   bottom: 0;
   right: 0;
-  z-index: $header-main-menu;
+  z-index: $header-main-menu-z-index;
 
   .item{
 
