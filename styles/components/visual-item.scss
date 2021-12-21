@@ -1,0 +1,49 @@
+/* VISUAL */
+
+.visual{
+  .title{
+    position: absolute;
+    top: 88px;
+    left: -10px;
+
+    .btn{
+      position: absolute;
+      top: 259px;
+      left: 173px;
+    }
+  }
+
+  .cup1.image{
+    position: absolute;
+    bottom: 0;
+    right: -47px;
+  }
+  .cup1.text{
+    position: absolute;
+    top: 38px;
+    right: 171px;
+  }
+
+  .cup2.image{
+    position: absolute;
+    bottom: 0;
+    right: 162px;
+  }
+  .cup2.text{
+    position: absolute;
+    top: 321px;
+    right: 416px;
+  }
+
+  .spoon{
+    position: absolute;
+    bottom: 0;
+    left: 275px;
+  }
+
+  .fade-in{
+    opacity: 0;
+  }
+}
+
+

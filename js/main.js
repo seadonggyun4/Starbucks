@@ -55,3 +55,15 @@ window.addEventListener('scroll', _.throttle(function(){
 
 
 },300));
+
+/* ============================== VISUAL fade-in Event ============================== */
+const fadeEls = document.querySelectorAll('.visual .fade-in');
+
+fadeEls.forEach(function(fadeEl, index){
+  //gsap.to(적용요소, 지속시간, 스타일옵션)
+  gsap.to(fadeEl, 1, {
+    opacity:1,
+    // 0.7 -> 1.4 -> 2.1 -> 2.7
+    delay: (index + 1) * .7
+  });
+});
