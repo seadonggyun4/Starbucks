@@ -31,7 +31,7 @@
 
       a{
         display: block;
-        font-size: 12px;
+        font-size: 13px;
         padding: 11px 16px;
         color: #656565;
 
@@ -67,7 +67,7 @@
 
       .material-icons{
         @include margin-center;
-        right: 8px;
+        right: 5px;
         height: 24px;
         transition: .4s ease-in-out;
       }
