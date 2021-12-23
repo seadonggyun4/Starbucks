@@ -1,6 +1,6 @@
 console.log('Starbucks clone Project!!');
 
-/* ==============================  HEADER Search Box Event ============================== */
+/* ==============================  HEADER: Search Box Event ============================== */
 const searchEl = document.querySelector('.search');
 const searchInputEl = searchEl.querySelector('input');
 
@@ -24,7 +24,7 @@ searchInputEl.addEventListener('blur', function(){
 
 
 
-/* ============================== HEADER badges Event ============================== */
+/* ============================== HEADER: badges Event ============================== */
 const badgeEl = document.querySelector('header .badges');
 
 //window: document가 html파일문서를 의미하듯이 window는 브라우저 창 을 의미한다.
@@ -36,12 +36,14 @@ lodash라는 라이브러리에서 제공하는 " -.throttle" 이라는 함수�
 뒤의 300은 0.3초를 의미하며 이렇게 부하를 걸면 매 순간 함수가 실행되며 프로젝트가 무거워 지는것을 방지 할 수 있다.
 
 _.throttle(함수, 시간)
+
+=> lodash 라이브러리의 명령어
 */
 window.addEventListener('scroll', _.throttle(function(){
   console.log(scrollY);
 
   if (window.scrollY > 500){
-    //gsap.to(적용요소, 지속시간, 스타일옵션)
+    //gsap.to(적용요소, 지속시간, 스타일옵션)  => gsap 라이브러리의 명령어
     gsap.to(badgeEl, .6, {
       opacity:0,
       display: 'none'
@@ -56,7 +58,7 @@ window.addEventListener('scroll', _.throttle(function(){
 
 },300));
 
-/* ============================== VISUAL fade-in Event ============================== */
+/* ============================== VISUAL: fade-in Event ============================== */
 const fadeEls = document.querySelectorAll('.visual .fade-in');
 
 fadeEls.forEach(function(fadeEl, index){
@@ -66,4 +68,14 @@ fadeEls.forEach(function(fadeEl, index){
     // 0.7 -> 1.4 -> 2.1 -> 2.7
     delay: (index + 1) * .7
   });
+});
+
+
+/* ============================== NOTICE: swiper ============================== */
+
+//new Swiper(선택자, 옵션)
+var swiper = new Swiper(".notice-line .swiper-container", {
+  direction: "vertical", // 슬라이드 방향
+  autoplay: true, //자동재생 여부
+  loop: true // 반복재생 여부
 });

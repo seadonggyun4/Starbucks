@@ -4,6 +4,7 @@
 
 @import './mixin/typography.scss';
 @import './mixin/margin-center.scss';
+@import './mixin/flex.scss';
 
 @import './base/inner.scss';
 @import './base/reset.scss';
@@ -12,11 +13,17 @@
 
 @import './layouts/header.scss';
 @import './layouts/visual.scss';
+@import './layouts/notice.scss';
+
 
 @import './components/sub-menu.scss';
 @import './components/main-menu.scss';
 @import './components/badges.scss';
 @import './components/visual-item.scss';
+@import './components/notice-line.scss';
+
+
+
 
 
 
