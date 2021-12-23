@@ -71,7 +71,7 @@ fadeEls.forEach(function(fadeEl, index){
 });
 
 
-/* ============================== NOTICE: swiper ============================== */
+/* ============================== NOTICE: notice-line swiper ============================== */
 
 //new Swiper(선택자, 옵션)
 var swiper = new Swiper(".notice-line .swiper-container", {
@@ -79,3 +79,27 @@ var swiper = new Swiper(".notice-line .swiper-container", {
   autoplay: true, //자동재생 여부
   loop: true // 반복재생 여부
 });
+
+/* ============================== NOTICE: promotion swiper ============================== */
+var swiper = new Swiper(".promotion .swiper-container", {
+  slidesPerView: 3, //한번에 보여줄 슬라이드 개수
+  spaceBetween: 10, // 슬라이드 사이 여백
+  centeredSlides: true, //1번 슬라이드가 가운데에 보이게 하기
+  loop: true, // 반복재생 여부
+  autoplay: {
+    delay: 5000
+  }, //자동재생 여부
+  pagination: {
+    el: ".promotion .swiper-pagination",
+    clickable: true // 클릭 가능여부
+  },
+
+  navigation: {
+    prevEl: '.promotion .swiper-prev',
+    nextEl: '.promotion .swiper-next'
+  }
+});
+
+
+const swiperEl = document.querySelector('.promotion .swiper-slide .swiper-slide-active')
+console.log(swiperEl);

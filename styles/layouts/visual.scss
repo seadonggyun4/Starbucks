@@ -3,6 +3,7 @@
 .visual{
   margin-top: $header-height;
   background-image: url(/images/visual_bg.jpg);
+  overflow: hidden;
 }
 
 .visual > .inner{
