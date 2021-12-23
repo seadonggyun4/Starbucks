@@ -103,3 +103,21 @@ var swiper = new Swiper(".promotion .swiper-container", {
 
 const swiperEl = document.querySelector('.promotion .swiper-slide .swiper-slide-active')
 console.log(swiperEl);
+
+/* ============================== NOTICE: promotion toggle ============================== */
+const promotionEl = document.querySelector('.promotion'); //프로모션 페이지
+const promotionToggleBtn = document.querySelector('.toggle-promotion')//토글버튼
+let isHidePromotion = false;
+
+promotionToggleBtn.addEventListener('click', function(){
+  isHidePromotion = !isHidePromotion // !는 부정문 즉 반대 값을 의미한다.
+
+  if(isHidePromotion){
+    //숨김 처리!
+    promotionEl.classList.add('hide');
+
+  } else {
+    //보임 처리!
+    promotionEl.classList.remove('hide');
+  }
+});

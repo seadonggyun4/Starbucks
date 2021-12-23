@@ -4,6 +4,13 @@
   position: relative;
   overflow: hidden;
 
+  transition: height .4s ease-in-out;
+
+
+  &.hide{
+    height: 0;
+  }
+
   .swiper-container{
     position: absolute;
     top: 40px;
