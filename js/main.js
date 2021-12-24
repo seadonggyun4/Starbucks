@@ -22,6 +22,28 @@ searchInputEl.addEventListener('blur', function(){
   searchInputEl.setAttribute('placeholder', '');
 })
 
+/* ============================== HEADER: main-menu dropbox ============================== */
+const mainMenuItems = document.querySelectorAll('.main-menu .item');
+
+
+console.log(mainMenuItems.length);
+
+for (let i = 0; i < mainMenuItems.length; i++) {
+  console.log(mainMenuItems[i]);
+  mainMenuItems[i].addEventListener('mouseover',function(){
+    let j = 0;
+    while(j < mainMenuItems.length){
+      mainMenuItems[j++].className = 'item';
+    }
+    mainMenuItems[i].className = 'item show';
+  })
+
+  mainMenuItems[i].addEventListener('mouseout',function(){
+    mainMenuItems[i].className = 'item';
+  })
+  
+}
+
 
 
 /* ============================== HEADER: badges Event ============================== */
@@ -121,3 +143,6 @@ promotionToggleBtn.addEventListener('click', function(){
     promotionEl.classList.remove('hide');
   }
 });
+
+
+
