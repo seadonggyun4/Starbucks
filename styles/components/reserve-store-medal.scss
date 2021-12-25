@@ -1,0 +1,61 @@
+/* RESERVE STORE */
+
+.reserve-store{
+
+  .medal{
+    width: 334px;
+    height: 334px;
+    perspective: 400px; //원근법을 적용
+    /*
+
+    perspective(투영점)은 3D 원근감을 주는 초점이라고 할 수 있습니다.
+
+    투영점이라는 단어는 사진을 다루는 사람들에게 익숙할 지도 모르겠으나 이 용어는 관찰자 관점(viewing perspctive), 원근감 등의 용어와도 비슷한 의미로 받아들일 수 있습니다.
+
+    즉, 3D 환경을 만들기 위해서 사용자는 관찰자 지점, 즉 투영점(깊이감,원근감)을 구체화시켜야 하며, 이것이 입체감을 부여하게 됩니다.
+
+    기본적으로 보는 사람의 위치를 추정하여 이 투영점을 명시함으로서 3D 환경의 관점을 설정하는 것입니다.
+
+
+    */
+
+    .front,
+    .back{
+      position: absolute;
+      width: 334px;
+      height: 334px;
+      backface-visibility: hidden; // 오브젝트가 뒷면으로 transform 되었을때 보여줄지에 대한 여부
+      transition: transform .7s ease-in-out;
+    }
+
+    .front{
+      transform: rotate(0);
+    }
+
+    .back{
+      transform: rotateY(-180deg);
+
+      .btn{
+        position: absolute;
+        top: 240px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+      }
+    }
+
+
+    &:hover{
+
+        .front{
+          transform: rotateY(180deg);
+        }
+
+        .back{
+          transform: rotateY(0deg);
+        }
+    }
+
+  }
+
+}
