@@ -21,7 +21,7 @@ header .main-menu{
       left: 0;
       width: 100%;
       overflow: hidden;
-      transition: height .5s ease-in;
+      // transition: height .5s ease-in;
       
 
       .contents__menu{
@@ -98,7 +98,7 @@ header .main-menu{
     .item__contents{
       display: block;
       animation-name: dropdown;
-      animation-duration: 1s;
+      animation-duration: .7s;
       animation-timing-function: ease-out;
       animation-direction: normal;
       
