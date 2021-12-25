@@ -164,7 +164,7 @@ function floatingObject(selector, delay, size){
       repeat: -1, // 반복 여부: -1은 무한반복을 의미
       yoyo: true, // yoyo 는 한번재생된 애니메이션을 역으로 다시 재생할수있는 함수
       ease: Power1.easeInOut, //easing 함수
-      delay: random(0, delay) 
+      delay: random(0, delay) //다시 애니메이션 이 실행되기까지 걸리는 시간ㄴ 
     }
   )
 }
