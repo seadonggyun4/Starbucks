@@ -45,6 +45,9 @@
   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
   <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 
+  <!-- ScrollMagic 라이브러리 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js" integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
   <!-- 유튜브 영상 설정 -->
   <script defer src="./js/youtube.js"></script>
 
@@ -510,15 +513,15 @@
   </section>
 
   <!-- ========== SEASON PRODUCT ==========  -->
-  <section class="season-product">
+  <section class="season-product scroll-spy">
     <div class="inner">
-    <img class="floating floating3" src="./images/floating3.png" alt="Icon" aria-hidden="true">
-      <img class="product" src="./images/season_product_image.png" alt="season-product" aria-hidden="true"/>
+      <img class="floating floating3" src="./images/floating3.png" alt="Icon" aria-hidden="true">
+      <img class="product back-to-position to-right delay-0" src="./images/season_product_image.png" alt="season-product" aria-hidden="true"/>
 
       <div class="text-group">
-        <img class="title" src="./images/season_product_text1.png" alt="season-product-title" />
-        <img class="description" src="./images/season_product_text2.png" alt="season-product-description" />
-        <div class="more">
+        <img class="title back-to-position to-left delay-1" src="./images/season_product_text1.png" alt="season-product-title" />
+        <img class="description back-to-position to-left delay-2" src="./images/season_product_text2.png" alt="season-product-description" />
+        <div class="more back-to-position to-left delay-3">
           <a class="btn" href="javascript:void(0)">자세히 보기</a>
         </div>
       </div>
@@ -527,29 +530,29 @@
   </section>
 
   <!-- ========== RESERVE COFFEE ==========  -->
-  <section class="reserve-coffee">
+  <section class="reserve-coffee scroll-spy">
     <div class="inner">
 
-      <img class="reserve-logo" src="./images/reserve_logo.png" alt="reserve-logo" />
+      <img class="reserve-logo back-to-position to-right delay-0" src="./images/reserve_logo.png" alt="reserve-logo" />
 
       <div class="text-group">
-        <img class="description" src="./images/reserve_text.png" alt="reserve-description" />
-        <div class="more">
+        <img class="description back-to-position to-right delay-1" src="./images/reserve_text.png" alt="reserve-description" />
+        <div class="more back-to-position to-right delay-2">
           <a class="btn btn--gold" href="javascrip:void(0)">자세히 보기</a>
         </div>
       </div>
 
-      <img class="product" src="./images/reserve_image.png" alt="reserve_image" aria-hidden="true" />
+      <img class="product back-to-position to-left delay-3" src="./images/reserve_image.png" alt="reserve_image" aria-hidden="true" />
     </div>
   </section>
 
   <!-- ========== PICK YOUR FAVORITE ==========  -->
-  <section class="pick-your-favorite">
+  <section class="pick-your-favorite scroll-spy">
     <div class="inner">
       <div class="text-group">
-        <img class="title" src="./images/favorite_text1.png" alt="title" />
-        <img class="description" src="./images/favorite_text2.png" alt="description" />
-        <div class="more">
+        <img class="title back-to-position to-right delay-0" src="./images/favorite_text1.png" alt="title" />
+        <img class="description back-to-position to-right delay-1" src="./images/favorite_text2.png" alt="description" />
+        <div class="more back-to-position to-right delay-2">
           <a class="btn btn--white" href="javascript:void(0)">자세히 보기</a>
         </div>
       </div>
@@ -575,8 +578,22 @@
   </section>
 
   <!-- ========== FIND THE STORE ==========  -->
-  <section class="find-store">
-    
+  <section class="find-store scroll-spy">
+    <div class="inner">
+      <img class="texture1" src="./images/find_store_texture1.png" alt="image for decorate background" aria-hidden="true" />
+      <img class="texture2" src="./images/find_store_texture2.png" alt="image for decorate background" aria-hidden="true" />
+      <img class="picture picture1 back-to-position to-right delay-0" src="./images/find_store_picture1.jpg" alt="store-picture1" aria-hidden="true" /> 
+      <img class="picture picture2 back-to-position to-right delay-1" src="./images/find_store_picture2.jpg" alt="store-picture2" aria-hidden="true" />  
+      
+      <div class="text-group">
+        <img class="title back-to-position to-left delay-2" src="./images/find_store_text1.png" alt="title">
+        <img class="description back-to-position to-left delay-3" src="./images/find_store_text2.png" alt="description">
+        <div class="more back-to-position to-left">
+          <a class="btn" href="javascript:void(0)">매장찾기</a>
+        </div>
+      </div>
+    </div>
+
   </section>
   
 </body>

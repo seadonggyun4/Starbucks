@@ -1,0 +1,50 @@
+/* FIND SOTRE */
+
+.find-store{
+  background-image: url(/images/find_store_bg.jpg);
+  .inner{
+    height: 400px;
+
+    .texture1{
+      position: absolute;
+      top: 0;
+      left: 400px;
+    }
+
+    .texture2{
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+
+    .picture{
+      position: absolute;
+      border-radius: 50%;
+      box-shadow: 2px 2px 8px rgba(0,0,0,.5);
+    }
+
+    .picture1{
+      top: -60px;
+      left: 0;
+    }
+
+    .picture2{
+      top: 150px;
+      left: 250px;
+    }
+
+    .text-group{
+      position: absolute;
+      top: 120px;
+      left: 550px;
+      
+      .title{
+        margin-bottom: 20px;
+      }
+
+      .description{
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
