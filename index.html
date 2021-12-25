@@ -48,7 +48,7 @@
   <!-- 유튜브 영상 설정 -->
   <script defer src="./js/youtube.js"></script>
 
-  
+
   <script defer src="./js/main.js"></script>
 </head>
 <body>
@@ -480,11 +480,11 @@
 
   <!-- ========== REWARDS ==========  -->
   <section class="rewards">
-    <div class="bg-left"></div>
-    <div class="bg-right"></div>
+    <div class="bg-left" aria-hidden="true"></div>
+    <div class="bg-right" aria-hidden="true"></div>
     <div class="inner">
 
-      <div class="btn-group">
+      <div class="btn-group" aria-label="rewards button group">
         <div class="btn btn--reverse sign-up">회원가입</div>
         <div class="btn sign-in">로그인</div>
         <div class="btn gift">e-Gift 선물하기</div>
@@ -494,11 +494,21 @@
   </section>
 
   <!-- ========== YOUTUBE VIDEO ==========  -->
-  <section class="youtube">
-    <div class="youtube_area">
+  <!-- youtube -->
+  <section class="youtube" aria-label="background video effect">
+    <div class="youtube_area" aria-hidden="true">
       <div id="player"></div>
     </div>
-    <div class="youtube_cover"></div>
+    <div class="youtube_cover" aria-hidden="true"></div>
+
+    <!-- animation -->
+    <div class="inner" aria-hidden="true">
+      <img class="floating floating1" src="./images/floating1.png" alt="Icon" aria-hidden="true">
+      <img class="floating floating2" src="./images/floating2.png" alt="Icon" aria-hidden="true">
+      <img class="floating floating3" src="./images/floating3.png" alt="Icon" aria-hidden="true">
+    </div>
   </section>
+
+  
 </body>
 </html>
