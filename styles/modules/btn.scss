@@ -12,7 +12,7 @@
   text-align: center;
   cursor: pointer;
   transition:  .4s ease-in-out;
-
+  overflow: hidden;
 
   &:hover{
     color: $white;
@@ -20,10 +20,26 @@
   }
 }
 
+.btn.effect::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, #fff, transparent);
+  transition: .4s ease-in-out;
+}
+
+.btn.effect:hover::before{
+  left: 100%;
+}
+
 
 .btn.btn--reverse{
   color: $white;
   background-color: $primary-color;
+  
 
   &:hover{
     color: $primary-color;

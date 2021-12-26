@@ -5,7 +5,7 @@
 
   .inner{
     @include flex-between;
-    height: 573px;
+    height: 600px;
 
     .floating3{
       position: absolute;
@@ -24,6 +24,10 @@
 
       .description{
         margin-bottom: 15px;
+      }
+
+      .more{
+        margin: 0;
       }
 
     }
