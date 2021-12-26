@@ -186,6 +186,7 @@ floatingObject('.floating1', 1, 15);
 floatingObject('.floating2', .5, 15);
 floatingObject('.floating3', 1.5, 20);
 
+
 /* ============================== ALL: scroll position animation ============================== */
 const spyEls = document.querySelectorAll('section.scroll-spy');
 
@@ -207,3 +208,11 @@ spyEls.forEach(function(spyEl){
     .setClassToggle(spyEl, 'show') // setClassToggle(적용될 식별자, 토글될 클래스 명)
     .addTo(new ScrollMagic.Controller());
 })
+
+
+/* ============================== FOOTER : calculate date and year ============================== */
+
+const thisYear = document.querySelector('.this-year');
+//textContent 는 텍스트 값을 받아오거나 수정할수 있다. 여기서는 수정을 의미
+//Date()함수로 현재 시간,년도,월,일,요일 등을 받고 getFullyear()함수로 그중 년도를 추출
+thisYear.textContent = new Date().getFullYear();
