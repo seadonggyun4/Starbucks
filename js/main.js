@@ -1,4 +1,4 @@
-console.log('Starbucks clone Project!!');
+console.log(' [== Starbucks clone Project! ==]');
 
 /* ==============================  HEADER: Search Box Event ============================== */
 const searchEl = document.querySelector('.search');
@@ -26,10 +26,7 @@ searchInputEl.addEventListener('blur', function(){
 const mainMenuItems = document.querySelectorAll('.main-menu .item');
 
 
-console.log(mainMenuItems.length);
-
 for (let i = 0; i < mainMenuItems.length; i++) {
-  console.log(mainMenuItems[i]);
   mainMenuItems[i].addEventListener('mouseover',function(){
     let j = 0;
     while(j < mainMenuItems.length){
@@ -62,7 +59,6 @@ _.throttle(함수, 시간)
 => lodash 라이브러리의 명령어
 */
 window.addEventListener('scroll', _.throttle(function(){
-  console.log(scrollY);
 
   if (window.scrollY > 500){
     //gsap.to(적용요소, 지속시간, 스타일옵션)  => gsap 라이브러리의 명령어
@@ -121,10 +117,21 @@ var swiper = new Swiper(".promotion .swiper-container", {
     nextEl: '.promotion .swiper-next'
   }
 });
+// const swiperEl = document.querySelector('.promotion .swiper-slide .swiper-slide-active')
+// console.log(swiperEl);
 
 
-const swiperEl = document.querySelector('.promotion .swiper-slide .swiper-slide-active')
-console.log(swiperEl);
+/* ============================== AWARDS: AWARDS swiper ============================== */
+var swiper = new Swiper('.awards .swiper-container', {
+  slidesPerView: 5, //한번에 보여줄 슬라이드 개수
+  autoplay: true,
+  loop: true, // 반복재생 여부
+  spaceBetween: 30,
+});
+
+
+
+
 
 /* ============================== NOTICE: promotion toggle ============================== */
 const promotionEl = document.querySelector('.promotion'); //프로모션 페이지
