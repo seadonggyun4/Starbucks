@@ -43,8 +43,9 @@ for (let i = 0; i < mainMenuItems.length; i++) {
 
 
 
-/* ============================== HEADER: badges Event ============================== */
+/* ============================== HEADER: badges & to-top button Event ============================== */
 const badgeEl = document.querySelector('header .badges');
+const toTopEl = document.querySelector('#to-top');
 
 //window: document가 html파일문서를 의미하듯이 window는 브라우저 창 을 의미한다.
 
@@ -62,19 +63,36 @@ window.addEventListener('scroll', _.throttle(function(){
 
   if (window.scrollY > 500){
     //gsap.to(적용요소, 지속시간, 스타일옵션)  => gsap 라이브러리의 명령어
+    //배지 숨기기
     gsap.to(badgeEl, .6, {
       opacity:0,
       display: 'none'
     });
+    //버튼보이기
+    gsap.to(toTopEl, .4, {
+      x:0
+    })
   } else{
+    //배지 보이기
     gsap.to(badgeEl, .6, {
       opacity:1,
       display: 'block'
     });
+    //버튼 숨기기!
+    gsap.to(toTopEl, .4, {
+      x: 100
+    })
   }
-
-
 },300));
+
+
+toTopEl.addEventListener('click', function(){
+  gsap.to(window, .7, {
+    scrollTo: 0
+  })
+})
+
+
 
 /* ============================== VISUAL: fade-in Event ============================== */
 const fadeEls = document.querySelectorAll('.visual .fade-in');
