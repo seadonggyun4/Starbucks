@@ -127,6 +127,11 @@ var swiper = new Swiper('.awards .swiper-container', {
   autoplay: true,
   loop: true, // 반복재생 여부
   spaceBetween: 30,
+
+  navigation: {
+    prevEl: '.awards .swiper-prev',
+    nextEl: '.awards .swiper-next'
+  }
 });
 
 
