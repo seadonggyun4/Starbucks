@@ -1,0 +1,69 @@
+.youtube{
+  position: relative;
+  height: 700px;
+  overflow: hidden;
+  background-color: $primary-color;
+
+  &_area{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: auto 0;
+    width: 1920px;  
+    transform: translate3d(-50%,-50%,0);
+    // background-color: royalblue;
+    
+
+
+    #player{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+    }
+  }
+
+  &_area::before{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 0;
+    padding-top: 56.25%;
+    
+  }
+
+  &_cover{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    // background-image: url(../../assets/images/video_cover_pattern.png);
+    background-color: rgba(0,0,0,.3);
+    
+  }
+
+  .inner{
+    height: 700px;
+
+  
+    .floating1{
+      position: absolute;
+      top: 50px;
+      left: 0;
+    }
+  
+    .floating2{
+      position: absolute;
+      top: 350px;
+      left: 150px;
+    }
+    
+    
+  }
+  
+  
+}
+
+

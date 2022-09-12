@@ -1,0 +1,15 @@
+/* RESERVE STORE */
+
+.reserve-store{
+  // background-image: url(../../assets/images/reserve_store_bg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  .inner{
+    @include flex-center;
+    height: 600px;
+  }
+
+}

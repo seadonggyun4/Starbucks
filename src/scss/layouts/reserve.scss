@@ -1,0 +1,27 @@
+/* RESERVE COFFEE */
+.reserve-coffee{
+  // background-image: url(../../assets/images/reserve_bg.jpg);  
+
+  .inner{
+    height: 400px;
+
+    .reserve-logo{
+      position: absolute;
+      top: 110px;
+      left: 0;
+    }
+
+    .text-group{
+      position: absolute;
+      top: 124px;
+      left: 208px;
+    }
+
+    .product{
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+  }
+}
+

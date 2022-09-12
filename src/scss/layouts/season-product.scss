@@ -1,0 +1,36 @@
+/* SEASON PRODUCT */
+
+.season-product{
+  // background-image: url(../../assets/images/season_product_bg.jpg);
+
+  .inner{
+    @include flex-between;
+    height: 600px;
+
+    .floating3{
+      position: absolute;
+      top: -200px;
+      right: 0;
+    }
+
+    .text-group{
+      position: absolute;
+      top: 110px;
+      right: 100px;
+
+      .title{
+        margin-bottom: 10px;
+      }
+
+      .description{
+        margin-bottom: 15px;
+      }
+
+      .more{
+        margin: 0;
+      }
+
+    }
+  }
+}
+

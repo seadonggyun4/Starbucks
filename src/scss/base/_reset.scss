@@ -1,0 +1,63 @@
+* {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    @include typography;
+    color: $primary-color;
+}
+
+img{
+    display: block;
+}
+
+
+h1 {
+margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color: $primary-color;
+    
+    &:hover{
+      text-decoration: underline;
+    }
+}
+
+button,
+input,
+select,
+textarea {
+background-color: transparent;
+border: 0;
+
+//   &은 and 와 같은 역할
+&:focus {
+    outline: none;
+    box-shadow: none;
+}
+}
+
+a,
+button {
+cursor: pointer;
+}
+
+button {
+padding: 0;
+}
+
+ul,
+ol {
+padding-left: 0;
+list-style: none;
+}
+
+address {
+font-style: normal;
+}
