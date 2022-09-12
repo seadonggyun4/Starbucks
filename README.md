@@ -11,7 +11,7 @@
 <br>
 <br>
 
-## 🔨기술스택 : HTML, SCSS, JavaScript
+## 🔨기술스택 : Vue , SCSS, JavaScript
 
 
 | Skill   | Info            | ✔   |
