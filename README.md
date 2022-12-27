@@ -18,7 +18,7 @@
 | ------ | --------------- | --------------- | 
 |HTML     | 오픈그래프, 트위터 카드를 사용| ✔   |
 |         | aria-hidden, aria-label 을 활용한 정보취약계층 고려| ✔   |
-|Vue      | component 기반의 UI구성 | ✔   |
+|Vue2      | component 기반의 UI구성 | ✔   |
 |SCSS     | constants / mixins / modules 선언| ✔   |
 |          | layout / components 단위 UI 구축 | ✔   |
 | JavaScript | Swiper.js 를 활용한 carousel 구현 | ✔ |
